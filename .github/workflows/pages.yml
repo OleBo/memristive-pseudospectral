@@ -11,10 +11,27 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
-  build:
+  reproduce:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install -e .
+      - run: python scripts/run_exact.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exact-analysis-results
+          path: results/exact/
+  build:
+    needs: reproduce
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: exact-analysis-results
+          path: results/exact/
       - name: Prepare site
         run: mkdir -p _site && cp -r docs/* _site/ && cp -r results _site/results
       - uses: actions/configure-pages@v5
