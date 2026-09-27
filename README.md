@@ -29,7 +29,7 @@ The main implementation now uses:
 - an orthogonal projector constructed as
   $$\Omega=A^T(AA^T)^{-1}A,$$
   with iid $A_{ij}\sim U(0,1)$,
-- the source-paper parameters $\alpha=\beta=1$, $\chi=0.9$, $N=200$, and the main-text statement $\operatorname{rank}(\Omega)=N-M=150$ for $M=50$,
+- the source-paper parameters $\alpha=\beta=1$, $\chi=0.9$, $N=200$, and the main-text statement $\mathop{\text{rank}}(\Omega)=N-M=150$ for $M=50$,
 - the $p=100$ smooth non-absorbing boundary window used in the paper,
 - Biolek $p=2$, Prodromakis $p=1$, and Joglekar $p=1$ window functions,
 - the nonlinear $\sinh$ current model with $i_c=T=R_{off}=1$,
@@ -59,7 +59,7 @@ The important qualitative observation is robust in this reconstruction: at the t
 
 A frozen-equilibrium calculation studies
 
-$$\delta\dot{x}=J(x^*)\delta x, \qquad \delta x(t)=e^{J(x^*)t}\delta x(0).$$
+$$\delta\dot{x}=J(x^\*)\delta x \qquad \delta x(t)=e^{J(x^\*)t}\delta x(0).$$
 
 A nonlinear escape trajectory instead generates the non-autonomous tangent equation
 
