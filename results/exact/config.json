@@ -1,0 +1,11 @@
+{
+  "N": 200,
+  "rank": 150,
+  "seed": 2026,
+  "s": 0.15,
+  "alpha": 1,
+  "beta": 1,
+  "chi": 0.9,
+  "drive": "normalized_all_ones",
+  "source_note": "The main-paper text states span(Omega)=N-M with M=50, implying rank(Omega)=150 for N=200; Supplementary D separately states rank Nc=100 for its basin experiment. The componentwise S vector is not specified, so this study fixes the gauge by normalizing the all-ones drive to the published scalar s."
+}

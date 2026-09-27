@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "Trajectory-dependent pseudospectral stability in self-organizing memristive networks"
+authors:
+  - family-names: Bochmann
+    given-names: Olaf
+version: 0.1.0
+date-released: 2026-09-27
+license: MIT
+repository-code: https://github.com/OleBo/memristive-pseudospectral
+abstract: >-
+  Independent computational study of local pseudospectral stability and
+  trajectory-dependent transient amplification in self-organizing memristive
+  networks, using analytic Jacobians and a source-aligned random-projector
+  construction.
+keywords:
+  - memristive networks
+  - pseudospectra
+  - non-normality
+  - transient growth
+  - dynamical systems
+  - numerical linear algebra
+references:
+  - type: article
+    authors:
+      - family-names: Caravelli
+        given-names: Francesco
+      - family-names: Sheldon
+        given-names: Forrest C.
+      - family-names: Traversa
+        given-names: Fabio L.
+    title: "Global minimization via classical tunneling assisted by collective force field formation"
+    journal: "Science Advances"
+    year: 2021
+    volume: 7
+doi: 10.1126/sciadv.abh1542
